@@ -1,4 +1,4 @@
-export const FetchMovieByTitle = async (api: any) => {
+export const Fetch = async (api: any) => {
   try {
     console.log("fetchberjalan");
     const response = await fetch(api);

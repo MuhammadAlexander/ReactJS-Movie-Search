@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "./ui/button";
 import Input from "./ui/input";
-import { FetchMovieByTitle } from "../services/apis/fetch";
+import { Fetch } from "../services/apis/fetch";
 import Cardlist from "./cardlist";
 import type { MovieData } from "../services/type";
 
@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   const fetchMovieData = async () => {
-    const result = await FetchMovieByTitle(
+    const result = await Fetch(
       `http://www.omdbapi.com/?apikey=85dbd32e&s=${inputValue}`
     );
     setData(result);
