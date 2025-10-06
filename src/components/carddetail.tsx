@@ -14,7 +14,6 @@ const CardDetail = () => {
       `http://www.omdbapi.com/?i=${params.id}&apikey=85dbd32e`
     );
     setData(response);
-    console.log(data);
     setLoading(false);
   };
 

@@ -7,7 +7,9 @@ export interface Movie {
 }
 
 export interface MovieData {
-  Search: Movie[];
+  Response: string;
+  Search?: Movie[];
+  totalResults?: string;
 }
 
 export interface Rating {
